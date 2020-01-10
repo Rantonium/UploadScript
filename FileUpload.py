@@ -19,6 +19,8 @@ except OSError as err:
     logger=logging.getLogger(__name__)
     logger.error(err)
 try:
+    if os.path.isfile(fileName):
+        os.path.remove(fileName)
     shutil.move(uploadPath+"/"+fileName,path)
 except OSError as err:
     logging.basicConfig(filename='/var/log/messages/FileUpload.log',level=logging.DEBUG,format='%(asctime)s %(levelname)s %(name)s %(message)s')
