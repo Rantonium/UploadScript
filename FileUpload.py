@@ -11,6 +11,7 @@ IdAutor=sys.argv[3]
 root=os.getcwd()
 uploadPath=root+"/uploads"
 path=root+"/"+"storage"+"/"+AnPublicare+"/"+IdAutor
+access_rights = o640
 try:
     Path(path).mkdir(parents=True,exist_ok=True)
 except OSError as err:
