@@ -9,7 +9,7 @@ AnPublicare=sys.argv[2]
 IdAutor=sys.argv[3]
 
 root=os.getcwd()
-uploadPath=root+"/uploads"
+uploadPath=root+"/home/linuser/Desktop/PythonicProject/media"
 path=root+"/"+"storage"+"/"+AnPublicare+"/"+IdAutor
 access_rights = o640
 try:
